@@ -31,8 +31,8 @@
         <?php $loop = new WP_Query(array(
             'post_type' => $pagename,
             'posts_per_page' => -1,
-            'orderby' => "title",
-            'order' => "ASC",
+            'orderby' => "title"
+            'order' => "ASC"
         ))?>
 
             <?php if($loop->have_posts()) : while($loop->have_posts()) : $loop->the_post(); ?>
